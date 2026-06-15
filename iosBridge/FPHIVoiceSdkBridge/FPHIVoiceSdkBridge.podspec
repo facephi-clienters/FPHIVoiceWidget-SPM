@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
     spec.name             = 'FPHIVoiceSdkBridge'
-    spec.version          = '0.1.0'
+    spec.version          = '0.1.1'
     spec.summary          = 'Objective-C compatible bridge for the Facephi Voice SDK.'
     spec.description      = <<-DESC
         Lightweight Swift bridge used by the KMP Voice Widget to access
@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
 
     spec.source_files     = 'Sources/FPHIVoiceSdkBridge/**/*.{swift}'
     spec.resource_bundles = {
-        'FPHIVoiceSdkBridgeResources' => ['Sources/FPHIVoiceSdkBridge/Resources/**/*']
+        'FPHIVoiceSdkBridgeResources' => ['Sources/FPHIVoiceSdkBridge/Resources/VoiceSDKResources']
     }
     spec.frameworks       = ['AVFoundation', 'Foundation']
     spec.dependency 'FPHIVoiceSDK', '~> 5.3.2'
