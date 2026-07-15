@@ -15,7 +15,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "git@github.com:facephi-clienters/FPHILicenseManager-SPM.git", exact: "0.5.7"),
-        .package(url: "git@github.com:facephi-clienters/SDK-FPHIDesignSystemResources-SPM.git", exact: "2.7.5"),
+        .package(url: "git@github.com:facephi-clienters/SDK-FPHIDesignSystemResources-SPM.git", exact: "2.7.7"),
         .package(url: "git@github.com:facephi-clienters/VoiceSDK-SPM.git", exact: "5.3.2"),
     ],
     targets: [
@@ -39,8 +39,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "FPHIVoiceWidget",
-            url: "https://facephicorp.jfrog.io/artifactory/spm-pro-fphi/WIDGET/FPHIVoiceWidget/0.1.8/FPHIVoiceWidget.zip",
-            checksum: "7927a4f870e4a4fd5442b346c73f4d6d34e284b626425a2a01d767a99b208eed"
+            url: "https://facephicorp.jfrog.io/artifactory/spm-pro-fphi/WIDGET/FPHIVoiceWidget/0.1.9/FPHIVoiceWidget.zip",
+            checksum: "d72ac31f882994627a5e96427c8f7dddd83e74b606233d140896b9e32c3beca2"
         ),
     ]
 )
