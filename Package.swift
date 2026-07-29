@@ -12,10 +12,14 @@ let package = Package(
             name: "FPHIVoiceWidget-SPM",
             targets: ["FPHIVoiceWidget-SPM", "FPHIVoiceWidget"],
         ),
+        .library(
+            name: "FPHIVoiceWidgetResources",
+            targets: ["FPHIVoiceWidgetResources-SPM"],
+        ),
     ],
     dependencies: [
         .package(url: "git@github.com:facephi-clienters/FPHILicenseManager-SPM.git", exact: "0.5.7"),
-        .package(url: "git@github.com:facephi-clienters/SDK-FPHIDesignSystemResources-SPM.git", exact: "2.7.7"),
+        .package(url: "git@github.com:facephi-clienters/SDK-FPHIDesignSystemResources-SPM.git", exact: "2.8.3"),
         .package(url: "git@github.com:facephi-clienters/VoiceSDK-SPM.git", exact: "5.3.2"),
     ],
     targets: [
@@ -24,9 +28,13 @@ let package = Package(
             dependencies: [
                 "FPHIVoiceWidget",
                 "FPHIVoiceSdkBridge",
+                "FPHIVoiceWidgetResources-SPM",
                 .product(name: "FPHIDesignSystemResources", package: "SDK-FPHIDesignSystemResources-SPM"),
                 "FPHILicenseManager-SPM",
-            ],
+            ]
+        ),
+        .target(
+            name: "FPHIVoiceWidgetResources-SPM",
             resources: [.copy("compose/cocoapods/compose-resources")]
         ),
         .target(
@@ -39,8 +47,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "FPHIVoiceWidget",
-            url: "https://facephicorp.jfrog.io/artifactory/spm-pro-fphi/WIDGET/FPHIVoiceWidget/0.1.9/FPHIVoiceWidget.zip",
-            checksum: "d72ac31f882994627a5e96427c8f7dddd83e74b606233d140896b9e32c3beca2"
+            url: "https://facephicorp.jfrog.io/artifactory/spm-pro-fphi/WIDGET/FPHIVoiceWidget/0.2.1/FPHIVoiceWidget.zip",
+            checksum: "d17a6cc38af5028e16564fa6af33561e0e445fd675fa451a298aca248ddf9560"
         ),
     ]
 )
