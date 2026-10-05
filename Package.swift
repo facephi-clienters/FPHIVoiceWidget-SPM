@@ -50,8 +50,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "FPHIVoiceWidget",
-            url: "https://facephicorp.jfrog.io/artifactory/spm-pro-fphi/WIDGET/FPHIVoiceWidget/0.2.8/FPHIVoiceWidget.zip",
-            checksum: "fcd353746a648269e1ace71ebfb41d794eb67a75f3a08f0fa68cd29ad7d4a9e2"
+            url: "https://facephicorp.jfrog.io/artifactory/spm-pro-fphi/WIDGET/FPHIVoiceWidget/0.3.0/FPHIVoiceWidget.zip",
+            checksum: "7037c78b80536ab1ca23c612acd6ec22bb9ec738ed6f8dbc1f02948246f4db04"
         ),
     ]
 )
